@@ -1,3 +1,5 @@
+import javax.swing.plaf.basic.BasicOptionPaneUI;
+
 public class Main {
     public static void main(String[] args) {
         //задание 1
@@ -22,5 +24,39 @@ public class Main {
         for (int m = 10; m >= -10; m--) {
             System.out.println(m);
         }
+        //задание 5
+        System.out.println(" ");
+        for (int i3 = 1904; i3 <= 2096; i3 = i3 + 4) {
+            System.out.println(i3 + " год является високосным");
+        }
+        //задание 6
+        System.out.println(" ");
+        for (int s = 7; s <= 98; s = s + 7) {
+            System.out.println(s);
+        }
+        //задание 7
+        System.out.println(" ");
+        for (int u = 1; u <= 512; u = u * 2) {
+            System.out.println(u);
+        }
+        //задание 8
+        System.out.println(" ");
+        int salary = 29000;
+        int total = 0;
+        for (int z = 1; z <= 12; z++) {
+            total = total + salary;
+            System.out.println("Месяц " + z + " , сумма накоплений равна " + total + " рублей");
+        }
+        //задание 8
+        System.out.println(" ");
+        int salaryPercentages = 29000;
+        int total2 = 0;
+        for (int p = 1; p <= 12; p++) {
+            total2 = (int) (total2 + total2 * 0.01);
+            total2 = total2 + salaryPercentages;
+            System.out.println("Месяц " + p + " , сумма накоплений равна " + total2 + " рублей");
+        }
+
     }
 }
+
